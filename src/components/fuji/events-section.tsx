@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
-import { CalendarIcon } from 'lucide-react';
+import { CalendarIcon, Facebook, Image as ImageIcon } from 'lucide-react';
 
 const events = [
   { 
@@ -84,7 +84,20 @@ export function EventsSection() {
                     <CardDescription className="mt-4">{event.description}</CardDescription>
                   </CardContent>
                   <CardFooter className="p-6 pt-0">
-                    <Button className="w-full">Learn More</Button>
+                    {event.type === 'upcoming' ? (
+                      <Button className="w-full">Learn More</Button>
+                    ) : (
+                      <div className="flex w-full gap-2">
+                        <Button variant="outline" className="w-full">
+                          <Facebook className="mr-2 h-4 w-4" />
+                          Bài viết Facebook
+                        </Button>
+                        <Button variant="outline" className="w-full">
+                          <ImageIcon className="mr-2 h-4 w-4" />
+                          Hình ảnh sự kiện
+                        </Button>
+                      </div>
+                    )}
                   </CardFooter>
                 </Card>
               ))}

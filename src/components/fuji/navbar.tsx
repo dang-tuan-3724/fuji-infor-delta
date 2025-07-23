@@ -3,17 +3,16 @@
 import Link from "next/link";
 import { MountainIcon } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
-import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center">
-        <Link href="#home" className="mr-6 flex items-center space-x-2">
+    <header className="sticky top-4 z-50 w-full px-4">
+      <div className="container flex h-16 items-center justify-between rounded-full border bg-background/95 px-6 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <Link href="#home" className="flex items-center space-x-2">
           <MountainIcon className="h-6 w-6 text-primary" />
           <span className="font-bold">Fuji</span>
         </Link>
-        <nav className="hidden flex-1 items-center space-x-4 sm:flex">
+        <nav className="hidden items-center space-x-6 sm:flex">
           <Link href="#home" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Home
           </Link>
@@ -27,7 +26,7 @@ export function Navbar() {
             Contact
           </Link>
         </nav>
-        <div className="flex flex-1 items-center justify-end space-x-4">
+        <div className="flex items-center justify-end">
           <ThemeToggle />
         </div>
       </div>
