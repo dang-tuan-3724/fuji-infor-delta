@@ -15,7 +15,7 @@ export function Navbar() {
           <MountainIcon className="h-6 w-6 text-primary" />
           <span className="font-bold">Fuji</span>
         </Link>
-        <nav className="hidden items-center space-x-6 sm:flex">
+        <nav className="hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center space-x-6 sm:flex">
           <Link href="#home" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Home
           </Link>

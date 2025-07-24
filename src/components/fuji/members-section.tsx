@@ -1,10 +1,10 @@
+
 "use client";
 
 import { useState } from 'react';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { members } from '@/lib/members-data';
 import { Badge } from '@/components/ui/badge';
 
@@ -35,14 +35,20 @@ export function MembersSection() {
           <TabsContent value={activeTab}>
             <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
               {filteredMembers.map((member) => (
-                <Card key={member.id} className="overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 rounded-2xl">
-                  <CardContent className="relative flex flex-col items-center p-4 text-center sm:p-6">
-                    <Avatar className="w-20 h-20 mb-4 sm:w-24 sm:h-24">
-                      <AvatarImage src={member.imageUrl as string} alt={member.name} />
-                      <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
-                    </Avatar>
-                    <h3 className="text-base font-medium sm:text-lg">{member.name}</h3>
-                    <p className="text-xs text-muted-foreground sm:text-sm">{member.department}</p>
+                <Card key={member.id} className="overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2 rounded-2xl group">
+                  <CardContent className="relative flex flex-col items-center p-0 text-center">
+                    <div className="relative w-full aspect-square">
+                      <Image 
+                        src={member.imageUrl as string} 
+                        alt={member.name} 
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-4 sm:p-6 w-full">
+                      <h3 className="text-base font-medium sm:text-lg">{member.name}</h3>
+                      <p className="text-xs text-muted-foreground sm:text-sm">{member.department}</p>
+                    </div>
                     <div className='absolute top-2 right-2 flex flex-col gap-1'>
                       {member.isPresident && <Badge variant="destructive">Chủ nhiệm</Badge>}
                       {member.isLeader && <Badge variant="secondary">Trưởng ban</Badge>}
