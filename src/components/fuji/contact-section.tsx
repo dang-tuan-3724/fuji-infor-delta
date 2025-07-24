@@ -24,7 +24,7 @@ const contactMethods = [
   },
   {
     icon: <Phone className="w-8 h-8 text-primary" />,
-    title: "Phone",
+    title: "Điện thoại",
     value: "(123) 456-7890",
     href: "tel:1234567890"
   },
@@ -35,9 +35,9 @@ export function ContactSection() {
     <section id="contact" className="w-full py-12 md:py-20 lg:py-24 bg-white dark:bg-secondary">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Get In Touch</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Liên hệ</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Have questions or want to collaborate? Reach out to us through any of these channels.
+            Bạn có câu hỏi hoặc muốn hợp tác? Hãy liên hệ với chúng tôi qua các kênh dưới đây.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-12 sm:gap-6 lg:grid-cols-4">

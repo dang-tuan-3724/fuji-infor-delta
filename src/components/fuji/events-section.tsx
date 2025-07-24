@@ -10,33 +10,33 @@ import { CalendarIcon, Facebook, Image as ImageIcon } from 'lucide-react';
 
 const events = [
   { 
-    title: 'Cherry Blossom Festival', 
+    title: 'Lễ hội hoa anh đào', 
     date: '2024-04-15', 
-    description: 'Annual celebration of spring with music, food, and art under the cherry blossoms.',
+    description: 'Lễ hội thường niên chào xuân với âm nhạc, ẩm thực và nghệ thuật dưới những tán hoa anh đào.',
     image: 'https://placehold.co/400x250.png',
     hint: 'event social',
     type: 'past' 
   },
   { 
-    title: 'Summer Matsuri', 
+    title: 'Lễ hội mùa hè Matsuri', 
     date: '2024-08-05', 
-    description: 'Experience a traditional Japanese summer festival with games, performances, and fireworks.',
+    description: 'Trải nghiệm lễ hội mùa hè truyền thống của Nhật Bản với các trò chơi, biểu diễn và pháo hoa.',
     image: 'https://placehold.co/400x250.png',
     hint: 'festival fun',
     type: 'upcoming' 
   },
   { 
-    title: 'Calligraphy Workshop', 
+    title: 'Workshop Thư pháp', 
     date: '2024-09-20', 
-    description: 'Learn the art of Japanese calligraphy from a master sensei. All materials provided.',
+    description: 'Học nghệ thuật thư pháp Nhật Bản từ một sensei bậc thầy. Tất cả dụng cụ sẽ được cung cấp.',
     image: 'https://placehold.co/400x250.png',
     hint: 'workshop art',
     type: 'upcoming' 
   },
   { 
-    title: 'Anime Movie Marathon', 
+    title: 'Marathon phim Anime', 
     date: '2024-03-10', 
-    description: 'A full day of classic and modern anime films, with free popcorn and drinks.',
+    description: 'Một ngày trọn vẹn với các bộ phim anime kinh điển và hiện đại, kèm bắp rang bơ và nước uống miễn phí.',
     image: 'https://placehold.co/400x250.png',
     hint: 'movie night',
     type: 'past' 
@@ -52,15 +52,15 @@ export function EventsSection() {
     <section id="events" className="w-full py-12 md:py-20 lg:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Club Events</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Sự kiện của Câu lạc bộ</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Check out our exciting lineup of past and future events. There's always something happening!
+            Khám phá danh sách các sự kiện hấp dẫn đã và đang diễn ra của chúng tôi. Luôn có điều gì đó mới mẻ!
           </p>
         </div>
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mt-8">
           <TabsList className="grid w-full grid-cols-2 h-auto flex-wrap gap-2">
-            <TabsTrigger value="upcoming" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Upcoming Events</TabsTrigger>
-            <TabsTrigger value="past" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Past Events</TabsTrigger>
+            <TabsTrigger value="upcoming" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Sự kiện sắp tới</TabsTrigger>
+            <TabsTrigger value="past" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Sự kiện đã qua</TabsTrigger>
           </TabsList>
           <TabsContent value={activeTab} className="mt-8">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -80,13 +80,13 @@ export function EventsSection() {
                     <CardTitle className="text-xl font-bold">{event.title}</CardTitle>
                     <div className="flex items-center mt-2 text-sm text-muted-foreground">
                       <CalendarIcon className="w-4 h-4 mr-2" />
-                      <span>{new Date(event.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                      <span>{new Date(event.date).toLocaleDateString('vi-VN', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                     </div>
                     <CardDescription className="mt-4">{event.description}</CardDescription>
                   </CardContent>
                   <CardFooter className="p-6 pt-0">
                     {event.type === 'upcoming' ? (
-                      <Button className="w-full">Learn More</Button>
+                      <Button className="w-full">Tìm hiểu thêm</Button>
                     ) : (
                       <div className="flex flex-col w-full gap-2">
                         <Button variant="outline" className="w-full">

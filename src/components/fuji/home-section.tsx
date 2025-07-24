@@ -10,11 +10,11 @@ export function HomeSection() {
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-start pt-8 text-center text-white sm:pt-24">
         <div className="container px-4 md:px-6">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline">
-            Welcome to Fuji Club
+            Chào mừng đến với Câu lạc bộ Fuji
           </h1>
           <div className="mt-6">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
-              <Link href="#events">Join an Event</Link>
+              <Link href="#events">Tham gia sự kiện</Link>
             </Button>
           </div>
         </div>
@@ -27,7 +27,7 @@ export function HomeSection() {
            <div className="absolute inset-0 bg-black/50" />
            <Image
             src="https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/background.jpg"
-            alt="Club members"
+            alt="Thành viên câu lạc bộ"
             fill
             className="object-cover"
             priority
@@ -39,7 +39,7 @@ export function HomeSection() {
            <div className="absolute inset-0 bg-black/50" />
            <Image
             src="https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/background.jpg"
-            alt="Club members"
+            alt="Thành viên câu lạc bộ"
             fill
             className="object-cover"
             style={{ objectPosition: 'center' }}

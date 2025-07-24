@@ -10,14 +10,14 @@ export function Footer() {
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <Image src={logo} alt="Fuji Club Logo" width={24} height={24} className="rounded-full" />
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()}© 2025 Fuji BK-HCM Japanese Club. All rights reserved. For inquiries, please contact Fuji's development team.
+            © {new Date().getFullYear()} Câu lạc bộ tiếng Nhật Fuji BK-HCM. Mọi quyền được bảo lưu.
           </p>
         </div>
         <nav className="flex gap-4 sm:gap-6">
-          <Link href="#home" className="text-sm font-medium text-muted-foreground hover:text-primary">Home</Link>
-          <Link href="#members" className="text-sm font-medium text-muted-foreground hover:text-primary">Members</Link>
-          <Link href="#events" className="text-sm font-medium text-muted-foreground hover:text-primary">Events</Link>
-          <Link href="#contact" className="text-sm font-medium text-muted-foreground hover:text-primary">Contact</Link>
+          <Link href="#home" className="text-sm font-medium text-muted-foreground hover:text-primary">Trang chủ</Link>
+          <Link href="#members" className="text-sm font-medium text-muted-foreground hover:text-primary">Thành viên</Link>
+          <Link href="#events" className="text-sm font-medium text-muted-foreground hover:text-primary">Sự kiện</Link>
+          <Link href="#contact" className="text-sm font-medium text-muted-foreground hover:text-primary">Liên hệ</Link>
         </nav>
       </div>
     </footer>
