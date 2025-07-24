@@ -6,24 +6,31 @@ export type Event = {
   image: string;
   hint: string;
   type: 'upcoming' | 'past';
+  facebookLink?: string;
+  googleFormLink?: string;
+  eventImagesLink?: string;
 };
 
 export const events: Event[] = [
   { 
-    title: 'Lễ hội hoa anh đào', 
+    title: 'Ngày hội văn hóa đọc', 
     date: '2024-04-15', 
-    description: 'Lễ hội thường niên chào xuân với âm nhạc, ẩm thực và nghệ thuật dưới những tán hoa anh đào.',
+    description: 'Lễ hội thường niên để khuyến khích các bạn đọc sách.',
     image: 'https://placehold.co/400x250.png',
     hint: 'event social',
-    type: 'past' 
+    type: 'past',
+    facebookLink: '#',
+    eventImagesLink: '#'
   },
   { 
-    title: 'Lễ hội mùa hè Matsuri', 
+    title: 'Workshop làm chuông gió Furin', 
     date: '2024-08-05', 
     description: 'Trải nghiệm lễ hội mùa hè truyền thống của Nhật Bản với các trò chơi, biểu diễn và pháo hoa.',
     image: 'https://placehold.co/400x250.png',
     hint: 'festival fun',
-    type: 'upcoming' 
+    type: 'upcoming',
+    facebookLink: '#',
+    googleFormLink: '#'
   },
   { 
     title: 'Workshop Thư pháp', 
@@ -31,7 +38,9 @@ export const events: Event[] = [
     description: 'Học nghệ thuật thư pháp Nhật Bản từ một sensei bậc thầy. Tất cả dụng cụ sẽ được cung cấp.',
     image: 'https://placehold.co/400x250.png',
     hint: 'workshop art',
-    type: 'upcoming' 
+    type: 'upcoming',
+    facebookLink: '#',
+    googleFormLink: '#'
   },
   { 
     title: 'Marathon phim Anime', 
@@ -39,6 +48,8 @@ export const events: Event[] = [
     description: 'Một ngày trọn vẹn với các bộ phim anime kinh điển và hiện đại, kèm bắp rang bơ và nước uống miễn phí.',
     image: 'https://placehold.co/400x250.png',
     hint: 'movie night',
-    type: 'past' 
+    type: 'past',
+    facebookLink: '#',
+    eventImagesLink: '#'
   },
 ];

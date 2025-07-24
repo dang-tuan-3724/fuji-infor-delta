@@ -3,10 +3,11 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
-import { CalendarIcon, Facebook, Image as ImageIcon } from 'lucide-react';
+import { CalendarIcon, Facebook, Image as ImageIcon, FileText } from 'lucide-react';
 import { events } from '@/lib/events-data';
 
 export function EventsSection() {
@@ -51,20 +52,47 @@ export function EventsSection() {
                     <CardDescription className="mt-4">{event.description}</CardDescription>
                   </CardContent>
                   <CardFooter className="p-6 pt-0">
-                    {event.type === 'upcoming' ? (
-                      <Button className="w-full rounded-full">Tìm hiểu thêm</Button>
-                    ) : (
-                      <div className="flex flex-col w-full gap-2">
-                        <Button variant="outline" className="w-full rounded-full">
-                          <Facebook className="mr-2 h-4 w-4" />
-                          Bài viết Facebook
-                        </Button>
-                        <Button variant="outline" size="icon" className="w-full rounded-full">
-                          <ImageIcon className="h-4 w-4" />
-                          <span className='sr-only'>Ảnh sự kiện</span>
-                        </Button>
-                      </div>
-                    )}
+                    <div className="flex flex-col w-full gap-2">
+                      {event.type === 'upcoming' ? (
+                        <>
+                          {event.facebookLink && (
+                            <Link href={event.facebookLink} target="_blank" className='w-full'>
+                              <Button className="w-full rounded-full">
+                                <Facebook className="mr-2 h-4 w-4" />
+                                Thông tin chi tiết
+                              </Button>
+                            </Link>
+                          )}
+                          {event.googleFormLink && (
+                            <Link href={event.googleFormLink} target="_blank" className='w-full'>
+                              <Button variant="outline" className="w-full rounded-full">
+                                <FileText className="mr-2 h-4 w-4" />
+                                Đăng ký ngay
+                              </Button>
+                            </Link>
+                          )}
+                        </>
+                      ) : (
+                        <>
+                          {event.facebookLink && (
+                            <Link href={event.facebookLink} target="_blank" className='w-full'>
+                              <Button variant="outline" className="w-full rounded-full">
+                                <Facebook className="mr-2 h-4 w-4" />
+                                Bài viết Facebook
+                              </Button>
+                            </Link>
+                          )}
+                          {event.eventImagesLink && (
+                            <Link href={event.eventImagesLink} target="_blank" className='w-full'>
+                              <Button variant="outline" size="icon" className="w-full rounded-full">
+                                <ImageIcon className="h-4 w-4" />
+                                <span className='sr-only'>Ảnh sự kiện</span>
+                              </Button>
+                            </Link>
+                          )}
+                        </>
+                      )}
+                    </div>
                   </CardFooter>
                 </Card>
               ))}
