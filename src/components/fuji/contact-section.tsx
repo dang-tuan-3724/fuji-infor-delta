@@ -1,3 +1,4 @@
+
 import { Mail, Phone, Facebook } from "lucide-react";
 import { TiktokIcon } from "../icons/tiktok-icon";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
@@ -32,7 +33,7 @@ const contactMethods = [
 export function ContactSection() {
   return (
     <section id="contact" className="w-full py-12 md:py-20 lg:py-24 bg-white dark:bg-secondary">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Get In Touch</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
