@@ -94,8 +94,7 @@ export function EventsSection() {
                           Bài viết Facebook
                         </Button>
                         <Button variant="outline" className="w-full">
-                          <ImageIcon className="mr-2 h-4 w-4" />
-                          Hình ảnh sự kiện
+                          <ImageIcon className="h-4 w-4" />
                         </Button>
                       </div>
                     )}
