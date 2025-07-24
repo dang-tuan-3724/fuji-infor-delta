@@ -12,10 +12,11 @@ import {
 } from "@/components/ui/dropdown-menu"
 import Image from "next/image";
 
+
 export function Navbar() {
   return (
     <header className="sticky top-4 z-50 w-full px-4">
-      <div className="container mx-auto flex h-16 items-center justify-between rounded-full border bg-background/95 px-6 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between rounded-full border bg-background/95 px-6 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <Link href="#home" className="flex items-center space-x-2">
           <Image src="https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/main/fuji-logo.png" alt="Fuji Club Logo" width={32} height={32} className="rounded-full" />
           <span className="font-bold">Fuji</span>
