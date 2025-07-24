@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export function HomeSection() {
   return (
-    <section id="home" className="relative w-full p-4">
+    <section id="home" className="relative w-full p-2">
       {/* Container for text, positioned over the image */}
       <div className="absolute inset-4 z-10 flex flex-col items-center justify-start pt-10 text-center text-white sm:pt-20">
         <div className="container px-4 md:px-6">

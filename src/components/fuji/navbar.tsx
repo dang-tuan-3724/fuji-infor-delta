@@ -45,7 +45,7 @@ export function Navbar() {
                   <span className="sr-only">Chuyển đổi menu điều hướng</span>
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-56">
+              <DropdownMenuContent align="end" className="w-56 bg-background/95 px-6 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-background/60 border">
                 <DropdownMenuItem asChild>
                   <Link href="#home">Trang chủ</Link>
                 </DropdownMenuItem>

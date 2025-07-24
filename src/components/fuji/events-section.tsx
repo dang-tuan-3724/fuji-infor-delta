@@ -7,41 +7,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { CalendarIcon, Facebook, Image as ImageIcon } from 'lucide-react';
-
-const events = [
-  { 
-    title: 'Lễ hội hoa anh đào', 
-    date: '2024-04-15', 
-    description: 'Lễ hội thường niên chào xuân với âm nhạc, ẩm thực và nghệ thuật dưới những tán hoa anh đào.',
-    image: 'https://placehold.co/400x250.png',
-    hint: 'event social',
-    type: 'past' 
-  },
-  { 
-    title: 'Lễ hội mùa hè Matsuri', 
-    date: '2024-08-05', 
-    description: 'Trải nghiệm lễ hội mùa hè truyền thống của Nhật Bản với các trò chơi, biểu diễn và pháo hoa.',
-    image: 'https://placehold.co/400x250.png',
-    hint: 'festival fun',
-    type: 'upcoming' 
-  },
-  { 
-    title: 'Workshop Thư pháp', 
-    date: '2024-09-20', 
-    description: 'Học nghệ thuật thư pháp Nhật Bản từ một sensei bậc thầy. Tất cả dụng cụ sẽ được cung cấp.',
-    image: 'https://placehold.co/400x250.png',
-    hint: 'workshop art',
-    type: 'upcoming' 
-  },
-  { 
-    title: 'Marathon phim Anime', 
-    date: '2024-03-10', 
-    description: 'Một ngày trọn vẹn với các bộ phim anime kinh điển và hiện đại, kèm bắp rang bơ và nước uống miễn phí.',
-    image: 'https://placehold.co/400x250.png',
-    hint: 'movie night',
-    type: 'past' 
-  },
-];
+import { events } from '@/lib/events-data';
 
 export function EventsSection() {
   const [activeTab, setActiveTab] = useState('upcoming');
@@ -59,8 +25,8 @@ export function EventsSection() {
         </div>
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mt-8">
           <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 h-auto rounded-full gap-2">
-            <TabsTrigger value="upcoming" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-2">Sự kiện sắp tới</TabsTrigger>
-            <TabsTrigger value="past" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-2">Sự kiện đã qua</TabsTrigger>
+            <TabsTrigger value="upcoming" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-2 px-4 text-sm sm:text-base">Sự kiện sắp tới</TabsTrigger>
+            <TabsTrigger value="past" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-2 px-4 text-sm sm:text-base">Sự kiện đã qua</TabsTrigger>
           </TabsList>
           <TabsContent value={activeTab} className="mt-8">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -86,15 +52,16 @@ export function EventsSection() {
                   </CardContent>
                   <CardFooter className="p-6 pt-0">
                     {event.type === 'upcoming' ? (
-                      <Button className="w-full">Tìm hiểu thêm</Button>
+                      <Button className="w-full rounded-full">Tìm hiểu thêm</Button>
                     ) : (
                       <div className="flex flex-col w-full gap-2">
                         <Button variant="outline" className="w-full rounded-full">
                           <Facebook className="mr-2 h-4 w-4" />
                           Bài viết Facebook
                         </Button>
-                        <Button variant="outline" className="w-full rounded-full">
+                        <Button variant="outline" size="icon" className="w-full rounded-full">
                           <ImageIcon className="h-4 w-4" />
+                          <span className='sr-only'>Ảnh sự kiện</span>
                         </Button>
                       </div>
                     )}
