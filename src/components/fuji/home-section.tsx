@@ -1,33 +1,25 @@
 
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 
 export function HomeSection() {
   return (
-    <section id="home" className="relative w-full">
+    <section id="home" className="relative w-full p-4">
       {/* Container for text, positioned over the image */}
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-start pt-2 text-center text-white sm:pt-12">
+      <div className="absolute inset-4 z-10 flex flex-col items-center justify-start pt-10 text-center text-white sm:pt-20">
         <div className="container px-4 md:px-6">
-            <h2 className="text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl lg:text-4xl font-headline">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl font-headline">
                Chào mừng đến với Câu lạc bộ Fuji
             </h2>
-          <div className="mt-6">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
-              <Link href="#events">Tham gia sự kiện</Link>
-            </Button>
-          </div>
         </div>
       </div>
 
       {/* Image container */}
-      <div className="relative w-full h-auto">
-        {/* Mobile image with 4/3 aspect ratio */}
+      <div className="relative w-full h-auto rounded-2xl overflow-hidden">
+        {/* Mobile image with 3/4 aspect ratio */}
         <div className="block sm:hidden aspect-[3/4] w-full">
-           <div className="absolute inset-0 bg-black/50" />
+           <div className="absolute inset-0 bg-black/60" />
            <Image
             src="https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/background.jpg"
-            //   https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/background.jpg
             alt="Thành viên câu lạc bộ"
             fill
             className="object-cover"
@@ -36,8 +28,8 @@ export function HomeSection() {
         </div>
 
         {/* Desktop image */}
-        <div className="hidden sm:block h-[calc(100vh-3.5rem)] w-full">
-           <div className="absolute inset-0 bg-black/50" />
+        <div className="hidden sm:block h-[calc(100vh-3.5rem-2rem)] w-full">
+           <div className="absolute inset-0 bg-black/60" />
            <Image
             src="https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/background.jpg"
             alt="Thành viên câu lạc bộ"
