@@ -2,7 +2,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu, MountainIcon } from "lucide-react";
+import { Menu } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,13 +11,14 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import Image from "next/image";
 
 export function Navbar() {
   return (
     <header className="sticky top-4 z-50 w-full px-4">
       <div className="container mx-auto flex h-16 items-center justify-between rounded-full border bg-background/95 px-6 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <Link href="#home" className="flex items-center space-x-2">
-          <MountainIcon className="h-6 w-6 text-primary" />
+          <Image src="https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/main/fuji-logo.png" alt="Fuji Club Logo" width={32} height={32} className="rounded-full" />
           <span className="font-bold">Fuji</span>
         </Link>
         <nav className="hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center space-x-6 sm:flex">
