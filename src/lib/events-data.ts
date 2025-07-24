@@ -29,7 +29,7 @@ export const events: Event[] = [
     image: 'https://placehold.co/400x250.png',
     hint: 'festival fun',
     type: 'upcoming',
-    facebookLink: '#',
+    facebookLink: 'https://www.facebook.com/FujiBKHCM/posts/pfbid02ZLdTXYjpiKpMmgR1eckQHbBCMY1He5Yhx17UAvupRfLJNPHWTv6BkQrfEYJRP6mFl',
     googleFormLink: '#'
   },
   { 
@@ -42,14 +42,5 @@ export const events: Event[] = [
     facebookLink: '#',
     googleFormLink: '#'
   },
-  { 
-    title: 'Marathon phim Anime', 
-    date: '2024-03-10', 
-    description: 'Một ngày trọn vẹn với các bộ phim anime kinh điển và hiện đại, kèm bắp rang bơ và nước uống miễn phí.',
-    image: 'https://placehold.co/400x250.png',
-    hint: 'movie night',
-    type: 'past',
-    facebookLink: '#',
-    eventImagesLink: '#'
-  },
+
 ];

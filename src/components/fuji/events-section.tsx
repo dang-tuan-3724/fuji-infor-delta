@@ -86,7 +86,7 @@ export function EventsSection() {
                             <Link href={event.eventImagesLink} target="_blank" className='w-full'>
                               <Button variant="outline" size="icon" className="w-full rounded-full">
                                 <ImageIcon className="h-4 w-4" />
-                                <span className='sr-only'>Ảnh sự kiện</span>
+                                Hình ảnh sự kiện
                               </Button>
                             </Link>
                           )}
