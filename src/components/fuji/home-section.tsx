@@ -1,15 +1,16 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export function HomeSection() {
   return (
-    <section id="home" className="relative h-[calc(100vh-3.5rem)] w-full">
+    <section id="home" className="relative h-[80vh] sm:h-[calc(100vh-3.5rem)] w-full">
       <Image
         src="https://placehold.co/1920x1080.png"
         alt="Club members"
         fill
-        className="object-cover"
+        className="object-cover sm:object-cover"
         data-ai-hint="club members group"
         priority
       />

@@ -1,8 +1,11 @@
+
 "use client";
 
 import Link from "next/link";
-import { MountainIcon } from "lucide-react";
+import { Menu, MountainIcon } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 
 export function Navbar() {
   return (
@@ -26,8 +29,40 @@ export function Navbar() {
             Contact
           </Link>
         </nav>
-        <div className="flex items-center justify-end">
+        <div className="flex items-center justify-end gap-2">
           <ThemeToggle />
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="sm:hidden">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Toggle navigation menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
+              <nav className="grid gap-4 text-lg font-medium mt-16">
+                <SheetClose asChild>
+                  <Link href="#home" className="flex w-full items-center py-2 text-muted-foreground transition-colors hover:text-primary">
+                    Home
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link href="#members" className="flex w-full items-center py-2 text-muted-foreground transition-colors hover:text-primary">
+                    Members
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link href="#events" className="flex w-full items-center py-2 text-muted-foreground transition-colors hover:text-primary">
+                    Events
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link href="#contact" className="flex w-full items-center py-2 text-muted-foreground transition-colors hover:text-primary">
+                    Contact
+                  </Link>
+                </SheetClose>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
