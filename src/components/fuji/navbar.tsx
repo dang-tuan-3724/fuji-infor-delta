@@ -15,7 +15,7 @@ import {
 export function Navbar() {
   return (
     <header className="sticky top-4 z-50 w-full px-4">
-      <div className="container flex h-16 items-center justify-between rounded-full border bg-background/95 px-6 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container mx-auto flex h-16 items-center justify-between rounded-full border bg-background/95 px-6 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <Link href="#home" className="flex items-center space-x-2">
           <MountainIcon className="h-6 w-6 text-primary" />
           <span className="font-bold">Fuji</span>
