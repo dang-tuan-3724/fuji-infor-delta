@@ -15,7 +15,7 @@ export function HomeSection() {
         priority
       />
       <div className="absolute inset-0 bg-black/50" />
-      <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
+      <div className="relative z-10 flex h-full flex-col items-center justify-start text-center text-white pt-20 sm:pt-24">
         <div className="container px-4 md:px-6">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline">
             Welcome to Fuji Club
