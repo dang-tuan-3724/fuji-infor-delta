@@ -27,9 +27,9 @@ export function MembersSection() {
           </p>
         </div>
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mt-8">
-          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-5 mb-8 h-auto flex-wrap gap-2">
+          <TabsList className="h-auto flex-wrap justify-center gap-2 mb-8">
             {departments.map(dept => (
-              <TabsTrigger key={dept} value={dept} className="flex-1 text-xs sm:text-sm rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-2.5">{dept}</TabsTrigger>
+              <TabsTrigger key={dept} value={dept} className="text-xs sm:text-sm rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 px-5">{dept}</TabsTrigger>
             ))}
           </TabsList>
           <TabsContent value={activeTab}>
