@@ -12,8 +12,8 @@ export default function Home() {
       <Navbar />
       <main className="flex w-full flex-1 flex-col items-center">
         <HomeSection />
-        <MembersSection />
         <EventsSection />
+        <MembersSection />
         <ContactSection />
       </main>
       <Footer />

@@ -11,25 +11,25 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import Image from "next/image";
-
+import logo from "@/assets/logo_clb.png"
 
 export function Navbar() {
   return (
     <header className="sticky top-4 z-50 w-full px-4">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between rounded-full border bg-background/95 px-6 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <Link href="#home" className="flex items-center space-x-2">
-          <Image src="https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/main/fuji-logo.png" alt="Fuji Club Logo" width={32} height={32} className="rounded-full" />
+          <Image src={logo} alt="Fuji Club Logo" width={32} height={32} className="rounded-full" />
           <span className="font-bold">Fuji</span>
         </Link>
         <nav className="hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center space-x-6 sm:flex">
           <Link href="#home" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Home
           </Link>
-          <Link href="#members" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
-            Members
-          </Link>
           <Link href="#events" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Events
+          </Link>
+          <Link href="#members" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            Members
           </Link>
           <Link href="#contact" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
             Contact

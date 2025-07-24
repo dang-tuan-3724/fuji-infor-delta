@@ -7,14 +7,14 @@ const contactMethods = [
   {
     icon: <Mail className="w-8 h-8 text-primary" />,
     title: "Email",
-    value: "hello@fujiclub.com",
-    href: "mailto:hello@fujiclub.com"
+		value: "fujijapanesecorner@gmail.com",
+		href: "mailto:fujijapanesecorner@gmail.com"
   },
   {
     icon: <Facebook className="w-8 h-8 text-primary" />,
     title: "Facebook",
-    value: "@fujiclubofficial",
-    href: "#"
+		value: "https://www.facebook.com/FujiBKHCM",
+		href: "https://www.facebook.com/FujiBKHCM"
   },
   {
     icon: <TiktokIcon className="w-8 h-8 text-primary" />,
@@ -51,7 +51,7 @@ export function ContactSection() {
                   <CardTitle>{method.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">{method.value}</p>
+                  {/* <p className="text-muted-foreground">{method.value}</p> */}
                 </CardContent>
               </Card>
             </a>

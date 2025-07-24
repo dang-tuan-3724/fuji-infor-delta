@@ -12,9 +12,6 @@ export function HomeSection() {
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline">
             Welcome to Fuji Club
           </h1>
-          <p className="mx-auto mt-4 max-w-[700px] text-lg md:text-xl text-neutral-200">
-            Connecting students through shared interests in Japanese culture, creativity, and community.
-          </p>
           <div className="mt-6">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
               <Link href="#events">Join an Event</Link>
