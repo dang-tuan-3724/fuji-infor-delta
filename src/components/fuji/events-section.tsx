@@ -58,14 +58,14 @@ export function EventsSection() {
           </p>
         </div>
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mt-8">
-          <TabsList className="grid w-full grid-cols-2">
-            <TabsTrigger value="upcoming">Upcoming Events</TabsTrigger>
-            <TabsTrigger value="past">Past Events</TabsTrigger>
+          <TabsList className="grid w-full grid-cols-2 h-auto flex-wrap gap-2">
+            <TabsTrigger value="upcoming" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Upcoming Events</TabsTrigger>
+            <TabsTrigger value="past" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Past Events</TabsTrigger>
           </TabsList>
           <TabsContent value={activeTab} className="mt-8">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {filteredEvents.map((event) => (
-                <Card key={event.title} className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl">
+                <Card key={event.title} className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl rounded-2xl">
                   <CardHeader className="p-0">
                     <Image
                       src={event.image}
