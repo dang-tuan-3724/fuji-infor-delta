@@ -7,11 +7,11 @@ export function HomeSection() {
   return (
     <section id="home" className="relative h-[80vh] sm:h-[calc(100vh-3.5rem)] w-full">
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src="https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/background.jpg"
         alt="Club members"
         fill
-        className="object-cover sm:object-cover"
-        data-ai-hint="club members group"
+        className="object-cover"
+        style={{ objectPosition: 'center' }}
         priority
       />
       <div className="absolute inset-0 bg-black/50" />
@@ -24,7 +24,7 @@ export function HomeSection() {
             Connecting students through shared interests in Japanese culture, creativity, and community.
           </p>
           <div className="mt-6">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
               <Link href="#events">Join an Event</Link>
             </Button>
           </div>
