@@ -88,7 +88,7 @@ export function EventsSection() {
                     {event.type === 'upcoming' ? (
                       <Button className="w-full">Learn More</Button>
                     ) : (
-                      <div className="flex w-full gap-2">
+                      <div className="flex flex-col w-full gap-2">
                         <Button variant="outline" className="w-full">
                           <Facebook className="mr-2 h-4 w-4" />
                           Bài viết Facebook
