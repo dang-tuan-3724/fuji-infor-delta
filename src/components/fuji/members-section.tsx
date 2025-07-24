@@ -42,16 +42,16 @@ export function MembersSection() {
             ))}
           </TabsList>
           <TabsContent value={activeTab}>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
               {filteredMembers.map((member) => (
                 <Card key={member.name} className="overflow-hidden transition-transform duration-300 ease-in-out hover:-translate-y-2">
-                  <CardContent className="flex flex-col items-center p-6 text-center">
-                    <Avatar className="w-24 h-24 mb-4">
+                  <CardContent className="flex flex-col items-center p-4 text-center sm:p-6">
+                    <Avatar className="w-20 h-20 mb-4 sm:w-24 sm:h-24">
                       <AvatarImage src={member.image} alt={member.name} data-ai-hint={member.hint} />
                       <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
                     </Avatar>
-                    <CardTitle className="text-lg font-medium">{member.name}</CardTitle>
-                    <p className="text-sm text-muted-foreground">{member.department}</p>
+                    <CardTitle className="text-base font-medium sm:text-lg">{member.name}</CardTitle>
+                    <p className="text-xs text-muted-foreground sm:text-sm">{member.department}</p>
                   </CardContent>
                 </Card>
               ))}

@@ -7,9 +7,9 @@ import { Footer } from '@/components/fuji/footer';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen w-full flex-col">
+    <div className="flex min-h-screen w-full flex-col items-center">
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 w-full">
         <HomeSection />
         <MembersSection />
         <EventsSection />

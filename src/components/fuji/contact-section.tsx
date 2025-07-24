@@ -31,7 +31,7 @@ const contactMethods = [
 
 export function ContactSection() {
   return (
-    <section id="contact" className="w-full py-12 md:py-20 lg:py-24 bg-secondary">
+    <section id="contact" className="w-full py-12 md:py-20 lg:py-24 bg-white dark:bg-secondary">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Get In Touch</h2>
@@ -39,7 +39,7 @@ export function ContactSection() {
             Have questions or want to collaborate? Reach out to us through any of these channels.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 mt-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 mt-12 sm:gap-6 lg:grid-cols-4">
           {contactMethods.map((method) => (
             <a key={method.title} href={method.href} className="group">
               <Card className="h-full text-center transition-all duration-300 group-hover:bg-card/80 group-hover:shadow-lg group-hover:-translate-y-1">
