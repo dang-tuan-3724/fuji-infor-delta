@@ -7,11 +7,11 @@ export function HomeSection() {
   return (
     <section id="home" className="relative w-full">
       {/* Container for text, positioned over the image */}
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-start pt-8 text-center text-white sm:pt-24">
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-start pt-2 text-center text-white sm:pt-12">
         <div className="container px-4 md:px-6">
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline">
-            Chào mừng đến với Câu lạc bộ Fuji
-          </h1>
+            <h2 className="text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl lg:text-4xl font-headline">
+               Chào mừng đến với Câu lạc bộ Fuji
+            </h2>
           <div className="mt-6">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
               <Link href="#events">Tham gia sự kiện</Link>
@@ -27,6 +27,7 @@ export function HomeSection() {
            <div className="absolute inset-0 bg-black/50" />
            <Image
             src="https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/background.jpg"
+            //   https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/background.jpg
             alt="Thành viên câu lạc bộ"
             fill
             className="object-cover"

@@ -58,9 +58,9 @@ export function EventsSection() {
           </p>
         </div>
         <Tabs value={activeTab} onValueChange={setActiveTab} className="mt-8">
-          <TabsList className="grid w-full grid-cols-2 h-auto flex-wrap gap-2">
-            <TabsTrigger value="upcoming" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Sự kiện sắp tới</TabsTrigger>
-            <TabsTrigger value="past" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Sự kiện đã qua</TabsTrigger>
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 h-auto rounded-full gap-2">
+            <TabsTrigger value="upcoming" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-2">Sự kiện sắp tới</TabsTrigger>
+            <TabsTrigger value="past" className="rounded-full data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-2">Sự kiện đã qua</TabsTrigger>
           </TabsList>
           <TabsContent value={activeTab} className="mt-8">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -89,11 +89,11 @@ export function EventsSection() {
                       <Button className="w-full">Tìm hiểu thêm</Button>
                     ) : (
                       <div className="flex flex-col w-full gap-2">
-                        <Button variant="outline" className="w-full">
+                        <Button variant="outline" className="w-full rounded-full">
                           <Facebook className="mr-2 h-4 w-4" />
                           Bài viết Facebook
                         </Button>
-                        <Button variant="outline" className="w-full">
+                        <Button variant="outline" className="w-full rounded-full">
                           <ImageIcon className="h-4 w-4" />
                         </Button>
                       </div>
