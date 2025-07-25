@@ -10,7 +10,7 @@ export function Footer() {
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <Image src={logo} alt="Fuji Club Logo" width={24} height={24} className="rounded-full" />
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Câu lạc bộ tiếng Nhật Fuji Trường Đại học Bách Khoa TP. Hồ Chí Minh. Mọi quyền được bảo lưu.
+            © {new Date().getFullYear()} Developer Team - Câu lạc bộ tiếng Nhật Fuji Trường Đại học Bách Khoa TP. Hồ Chí Minh. Mọi quyền được bảo lưu.
           </p>
         </div>
         <nav className="flex gap-4 sm:gap-6">
