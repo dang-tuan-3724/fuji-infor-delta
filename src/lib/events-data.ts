@@ -14,28 +14,28 @@ export type Event = {
 export const events: Event[] = [
   { 
     title: 'Ngày hội văn hóa đọc', 
-    date: '2024-04-15', 
-    description: 'Lễ hội thường niên để khuyến khích các bạn đọc sách.',
-    image: 'https://placehold.co/400x250.png',
-    hint: 'event social',
+    date: '2025-04-18', 
+    description: 'Tại Ngày hội Văn hóa đọc, các bạn sẽ có cơ hội chìm đắm vào không gian sách vô cùng thú vị, được trải nghiệm nhiều gian hàng độc đáo đến từ các đơn vị đồng hành',
+    image: 'https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/van_hoa_doc.jpg',
+    hint: 'Ngày hội văn hóa đọc',
     type: 'past',
-    facebookLink: '#',
+    facebookLink: 'https://www.facebook.com/FujiBKHCM/posts/pfbid02QkrXvcLHHDVPJYnLhoq9BcRffTtJfzFewE2kpE6tZuXxEhqEYUCWrStyt2BsEysxl',
     eventImagesLink: '#'
   },
   { 
     title: 'Workshop làm chuông gió Furin', 
-    date: '2024-08-05', 
+    date: '2025-05-30', 
     description: 'Trải nghiệm lễ hội mùa hè truyền thống của Nhật Bản với các trò chơi, biểu diễn và pháo hoa.',
-    image: 'https://placehold.co/400x250.png',
-    hint: 'festival fun',
-    type: 'upcoming',
-    facebookLink: 'https://www.facebook.com/FujiBKHCM/posts/pfbid02ZLdTXYjpiKpMmgR1eckQHbBCMY1He5Yhx17UAvupRfLJNPHWTv6BkQrfEYJRP6mFl',
-    googleFormLink: '#'
+    image: 'https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/furin_workshop.jpg',
+    hint: 'Furin Workshop',
+    type: 'past',
+    facebookLink: 'https://www.facebook.com/FujiBKHCM/posts/pfbid02ZRmVB8XYG5XYQDPq3JusoggaZSiWEWorWF1v4YTDe5Qqkc5DPock97gJTW8scAapl',
+    eventImagesLink: '#'
   },
   { 
-    title: 'Workshop Thư pháp', 
-    date: '2024-09-20', 
-    description: 'Học nghệ thuật thư pháp Nhật Bản từ một sensei bậc thầy. Tất cả dụng cụ sẽ được cung cấp.',
+    title: 'Tuyển quân F12 - 2025', 
+    date: '2025-09-01', 
+    description: 'Hãy cùng tham gia vào đại gia đình Fuji nhé.',
     image: 'https://placehold.co/400x250.png',
     hint: 'workshop art',
     type: 'upcoming',
