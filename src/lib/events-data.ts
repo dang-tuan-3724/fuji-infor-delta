@@ -25,7 +25,7 @@ export const events: Event[] = [
   { 
     title: 'Workshop làm chuông gió Furin', 
     date: '2025-05-30', 
-    description: 'Trải nghiệm lễ hội mùa hè truyền thống của Nhật Bản với các trò chơi, biểu diễn và pháo hoa.',
+    description: 'Trải nghiệm workshop làm chuông gió Furin. Cùng nhau tạo nên những chiếc chuông gió xinh xắn và mang về nhà nhé!',
     image: 'https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/furin_workshop.jpg',
     hint: 'Furin Workshop',
     type: 'past',
@@ -34,13 +34,13 @@ export const events: Event[] = [
   },
   { 
     title: 'Tuyển quân F12 - 2025', 
-    date: '2025-09-01', 
-    description: 'Hãy cùng tham gia vào đại gia đình Fuji nhé.',
-    image: 'https://placehold.co/400x250.png',
+    date: '2025-09-04', 
+    description: 'FUJI mở đơn tuyển F12 2025 — gồm 3 vòng: Điền form (Wall Sina), Phỏng vấn (Wall Rose) và Training (Wall Maria). Đăng ký để thể hiện đam mê, kỹ năng và gia nhập câu lạc bộ Fuji cùng tụi mình nhé!',
+    image: 'https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/tuyen_quan_f12.jpg',
     hint: 'workshop art',
     type: 'upcoming',
-    facebookLink: '#',
-    googleFormLink: '#'
+    facebookLink: 'https://www.facebook.com/share/p/1GGc3HCyAi/',
+    googleFormLink: 'https://forms.gle/q9wHAsmqAdin4Qyt6'
   },
 
 ];
