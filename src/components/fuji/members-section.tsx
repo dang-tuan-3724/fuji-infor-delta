@@ -47,7 +47,10 @@ export function MembersSection() {
                     </div>
                     <div className="p-4 sm:p-6 w-full">
                       <h3 className="text-base font-medium sm:text-lg">{member.name}</h3>
+                      <p className="text-s sm:text-sm">{member.generation}</p>
                       <p className="text-xs text-muted-foreground sm:text-sm">{member.department}</p>
+
+                      
                     </div>
                     <div className='absolute top-2 right-2 flex flex-col gap-1'>
                       {member.isPresident && <Badge variant="destructive">Chủ nhiệm</Badge>}
