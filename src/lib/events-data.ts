@@ -36,7 +36,7 @@ export const events: Event[] = [
     title: 'Tuyển quân F12 - 2025', 
     date: '2025-09-04', 
     description: 'FUJI mở đơn tuyển F12 2025 — gồm 3 vòng: Điền form (Wall Sina), Phỏng vấn (Wall Rose) và Training (Wall Maria). Đăng ký để thể hiện đam mê, kỹ năng và gia nhập câu lạc bộ Fuji cùng tụi mình nhé!',
-    image: 'https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/tuyen_quan_f12.jpg',
+    image: 'https://raw.githubusercontent.com/dang-tuan-3724/Fuji-assets/refs/heads/main/f12.png',
     hint: 'workshop art',
     type: 'upcoming',
     facebookLink: 'https://www.facebook.com/share/p/1GGc3HCyAi/',
